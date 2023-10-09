@@ -22,6 +22,7 @@ static adc_conf_t adc={
 Std_ReturnType currant_sensor_init(channel_select_t channal){
     Std_ReturnType ret = E_NOT_OK;
     adc.adc_channel=channal;
+    ADC_Init(&adc);
 }
 
 double Read_currant_sensor(double scale)
