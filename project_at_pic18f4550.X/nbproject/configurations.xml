@@ -15,6 +15,12 @@
           </logicalFolder>
         </logicalFolder>
       </logicalFolder>
+      <logicalFolder name="helper" displayName="helper" projectFiles="true">
+        <logicalFolder name="PID_control" displayName="PID_control" projectFiles="true">
+          <itemPath>helper/PID_control/PID.c</itemPath>
+          <itemPath>helper/PID_control/PID.h</itemPath>
+        </logicalFolder>
+      </logicalFolder>
       <logicalFolder name="MCAL_Layer" displayName="MCAL_Layer" projectFiles="true">
         <logicalFolder name="ADC" displayName="ADC" projectFiles="true">
           <itemPath>MCAL_Layer/ADC/hal_adc.h</itemPath>
@@ -73,6 +79,10 @@
           </logicalFolder>
         </logicalFolder>
       </logicalFolder>
+      <logicalFolder name="helper" displayName="helper" projectFiles="true">
+        <logicalFolder name="PID_control" displayName="PID_control" projectFiles="true">
+        </logicalFolder>
+      </logicalFolder>
       <logicalFolder name="MCAL_Layer" displayName="MCAL_Layer" projectFiles="true">
         <logicalFolder name="ADC" displayName="ADC" projectFiles="true">
           <itemPath>MCAL_Layer/ADC/hal_adc.c</itemPath>
@@ -117,6 +127,7 @@
     <Elem>MCAL_Layer</Elem>
     <Elem>../test2.X/ECU_Layer</Elem>
     <Elem>ECU_Layer</Elem>
+    <Elem>helper</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>

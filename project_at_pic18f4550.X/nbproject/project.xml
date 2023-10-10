@@ -12,6 +12,7 @@
                 <sourceRootElem>MCAL_Layer</sourceRootElem>
                 <sourceRootElem>../test2.X/ECU_Layer</sourceRootElem>
                 <sourceRootElem>ECU_Layer</sourceRootElem>
+                <sourceRootElem>helper</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>
