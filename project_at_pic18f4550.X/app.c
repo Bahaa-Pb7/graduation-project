@@ -27,14 +27,15 @@ eccp_t eccp_obj={
   
 };
 
-double res=0.0;
+
+  int val;
 int main() {
     
     PID_t pid_obj={
-      .Kd=0,
-      .Ki=0,
-      .Kp=30,
-      .target=2.0,
+      .Kd=1,
+      .Ki=1,
+      .Kp=5.0,
+      .target=7.0,
       .max_PID_value=100,
       .min_PID_value=0
     };
@@ -49,8 +50,8 @@ currant_sensor_init(CHANNEL_AN0);
        pid_obj.actual=Read_currant_sensor(1.0);
        double pid=PID_control(&pid_obj);
        
-       int val=(int)map(pid,0,100,63,0);
-       Eccp_DeadTime(val);     // 0->1023   to 0 -> 63
+       val=(int)map(pid,0,100,25,0);
+       Eccp_DeadTime(val);     // 0 -> 63
    
         
         
