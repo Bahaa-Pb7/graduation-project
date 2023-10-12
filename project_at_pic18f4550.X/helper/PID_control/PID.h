@@ -16,6 +16,8 @@ typedef struct
     double Kp;
     double Ki;
     double Kd;
+    double max_PID_value;
+    double min_PID_value;
 }PID_t;
 double PID_control(PID_t *obj);
 

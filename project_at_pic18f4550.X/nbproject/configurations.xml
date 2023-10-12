@@ -19,6 +19,7 @@
         <logicalFolder name="PID_control" displayName="PID_control" projectFiles="true">
           <itemPath>helper/PID_control/PID.h</itemPath>
         </logicalFolder>
+        <itemPath>helper/helper_function.h</itemPath>
       </logicalFolder>
       <logicalFolder name="MCAL_Layer" displayName="MCAL_Layer" projectFiles="true">
         <logicalFolder name="ADC" displayName="ADC" projectFiles="true">
@@ -82,6 +83,7 @@
         <logicalFolder name="PID_control" displayName="PID_control" projectFiles="true">
           <itemPath>helper/PID_control/PID.c</itemPath>
         </logicalFolder>
+        <itemPath>helper/helper_function.c</itemPath>
       </logicalFolder>
       <logicalFolder name="MCAL_Layer" displayName="MCAL_Layer" projectFiles="true">
         <logicalFolder name="ADC" displayName="ADC" projectFiles="true">
