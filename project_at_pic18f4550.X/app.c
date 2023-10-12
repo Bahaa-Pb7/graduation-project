@@ -51,7 +51,7 @@ currant_sensor_init(CHANNEL_AN0);
        double pid=PID_control(&pid_obj);
        
        val=(int)map(pid,0,100,25,0);
-       Eccp_DeadTime(val);     // 0 -> 63
+       Eccp_DeadTime(val);    
    
         
         
