@@ -10,14 +10,12 @@
 
 
 typedef struct
-{
-    
-    
+{  
     double target ;
-     double actual ;
+    double actual ;
     double Kp;
-     double Ki;
-     double Kd;
+    double Ki;
+    double Kd;
 }PID_t;
 double PID_control(PID_t *obj);
 
