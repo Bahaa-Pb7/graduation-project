@@ -11,10 +11,10 @@
 #include "ECU_Layer/Sensor/current/current_sensor.h"
 #include "helper/PID_control/PID.h"
 #include "helper/helper_function.h"
+#include "ECU_Layer/Pot/Pot.h"
 
 
-
-
+/*
 eccp_t eccp_obj={
   .dead_time= 0 ,
   .mode_selected=PWM,
@@ -28,9 +28,10 @@ eccp_t eccp_obj={
 };
 
 
-  int val;
+  int val;*/
+uint32 res=0;
 int main() {
-    
+    /*
     PID_t pid_obj={
       .Kd=1,
       .Ki=1,
@@ -42,16 +43,19 @@ int main() {
 ECCP_Init(&eccp_obj);
 ECCP_Set_duty(50);
 Eccp_DeadTime(0);
-currant_sensor_init(CHANNEL_AN0);
+currant_sensor_init(CHANNEL_AN0);*/
+    Pot_initialization(CHANNEL_AN0);
     while(1)
     {
+        ECU_Pot_Set(&res,200);
+        /*
        pid_obj.actual=Read_currant_sensor(1.0);
 
        pid_obj.actual=Read_currant_sensor(1.0);
        double pid=PID_control(&pid_obj);
        
        val=(int)map(pid,0,100,25,0);
-       Eccp_DeadTime(val);    
+       Eccp_DeadTime(val);   */ 
    
         
         
